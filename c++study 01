@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+	
+	cout << "당신의 이름은 무엇입니까?:\n"; 
+	char name0[12]; // 문자열 개수 정하기
+	cin.getline(name0, 12, '\n'); // 공백 포함한 문자열 입력 받기
+	cout << "반갑습니다." << name0 << "님.\n\n";
+
+	cout << "-------- - SWING30--------- " << endl;
+	int cola_p; //변수 선언
+	int water_p;
+	int fanta_p;
+
+	cout << "음료의 가격 입력을 시작합니다.\n\n";
+	cout << "콜라의 가격:\n"; 
+	cin >> cola_p; // 콜라 가격 입력
+	cout << "삼다수의 가격:\n";
+	cin >> water_p; // 삼다수 가격 입력
+	cout << "환타의 가격:\n";
+	cin >> fanta_p; // 환타 가격 입력 
+
+	cout << "개수를 입력해주세요.\n\n";
+	int cola; // 변수 선언
+	int water;
+	int fanta;
+
+	cout << "콜라 수량:\n";
+	cin >> cola;
+	cout << "삼다수 수량:\n";
+	cin >> water;
+	cout << "환타 수량:\n";
+	cin >> fanta;
+
+	cout << "--------------------------" << endl;
+	int price;
+	price = cola_p * cola + water_p * water + fanta_p * fanta; // 총 가격 계산
+	cout << "500원을 할인받아 총" << price - 500 << "원 입니다.";
+
+}
